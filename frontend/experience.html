@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>experience.md | Shahid Khan</title>
+    <meta name="description" content="Experience and education of Shahid Khan." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .exp-edu-page .section-head h2 { font-size: clamp(2.4rem, 4vw, 3.5rem); }
+      .exp-edu-page h3 { font-size: 2rem; margin-bottom: 1rem; }
+      .exp-edu-page .panel p { font-size: 1.3rem; margin-bottom: 0.7rem; line-height: 1.7; }
+      .exp-edu-page ul li { font-size: 1.25rem; margin-bottom: 0.8rem; line-height: 1.7; }
+      .exp-edu-page .skills span { font-size: 1.25rem; padding: 0.6rem 0.95rem; }
+      .exp-edu-page .cart-grid, .exp-edu-page .card-grid { gap: 1.5rem; }
+      .exp-edu-page .panel { padding: 2rem; }
+    </style>
+  </head>
+  <body>
+    <div class="ide-bg" aria-hidden="true"></div>
+
+    <div class="app-shell">
+      <header class="title-bar">
+        <div class="title-meta">
+          <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="title-text">shahid-portfolio - Visual Studio Code</p>
+        </div>
+        <button class="explorer-toggle" id="explorerToggle" aria-label="Toggle explorer">Explorer</button>
+      </header>
+
+      <div class="workbench">
+        <aside class="explorer" id="explorerPanel" aria-label="File explorer">
+          <p class="explorer-header">Explorer</p>
+          <p class="explorer-group">portfolio</p>
+          <ul class="explorer-list">
+            <li><a class="explorer-link" data-cmd="cat about.md" href="index.html">about.md</a></li>
+            <li><a class="explorer-link" data-cmd="cat experience.md" href="experience.html">experience.md</a></li>
+            <li><a class="explorer-link" data-cmd="cat projects.md" href="projects.html">projects.md</a></li>
+            <li><a class="explorer-link" data-cmd="cat contact.sh" href="contact.html">contact.sh</a></li>
+          </ul>
+        </aside>
+
+        <main class="editor">
+          <div class="editor-tabs">
+            <div class="editor-tab">experience.md</div>
+          </div>
+
+          <div class="editor-content reveal exp-edu-page">
+            <div class="section-head">
+              <p class="eyebrow">Experience & Education</p>
+              <h2>Product-minded technical foundation</h2>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <h3 style="margin-bottom: 1.2rem; margin-top: 0; border-bottom: 1px solid #2f3d61; padding-bottom: 0.75rem;">Experience</h3>
+              <article class="panel">
+                <h3>Information Technology Technician</h3>
+                <p>SUNY New Paltz, New Paltz, NY | Aug 2025 - Present</p>
+                <ul>
+                  <li>Acted as a product liaison between campus users and IT leadership, surfacing software usability and system issues.</li>
+                  <li>Resolved support tickets across in-person, phone, and email channels while collaborating with management on durable solutions.</li>
+                  <li>Troubleshot hardware, software, and networking incidents and translated technical details into clear action plans.</li>
+                </ul>
+              </article>
+            </div>
+
+            <div>
+              <h3 style="margin-bottom: 1.2rem; margin-top: 0; border-bottom: 1px solid #2f3d61; padding-bottom: 0.75rem;">Education & Skills</h3>
+              <div class="card-grid two-up">
+                <article class="panel">
+                  <h3>SUNY New Paltz</h3>
+                  <p>Bachelor of Science in Computer Science</p>
+                  <p>Aug 2024 - Expected Dec 2026</p>
+                  <h3 style="margin-top: 1rem;">SUNY Ulster</h3>
+                  <p>Associate in Computer Science</p>
+                  <p>Aug 2023 - May 2024</p>
+                </article>
+
+                <article class="panel">
+                  <h3>Technical Skills</h3>
+                  <div class="skills">
+                    <span>JavaScript</span><span>HTML/CSS</span><span>SQL</span><span>Java</span>
+                    <span>React</span><span>Node.js</span><span>Express</span><span>Socket.IO</span>
+                    <span>PostgreSQL</span><span>Firebase</span><span>JWT</span><span>Docker</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <section class="terminal">
+        <div class="terminal-header">Terminal</div>
+        <div class="terminal-content" id="terminalLog">
+          <p><span class="prompt">guest@portfolio:~$</span> npm run dev</p>
+          <p class="success">Compiled successfully.</p>
+          <p><span class="prompt">guest@portfolio:~$</span> <span class="cursor">_</span></p>
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

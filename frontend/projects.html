@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projects.md | Shahid Khan</title>
+    <meta name="description" content="Projects by Shahid Khan." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="ide-bg" aria-hidden="true"></div>
+
+    <div class="app-shell">
+      <header class="title-bar">
+        <div class="title-meta">
+          <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="title-text">shahid-portfolio - Visual Studio Code</p>
+        </div>
+        <button class="explorer-toggle" id="explorerToggle" aria-label="Toggle explorer">Explorer</button>
+      </header>
+
+      <div class="workbench">
+        <aside class="explorer" id="explorerPanel" aria-label="File explorer">
+          <p class="explorer-header">Explorer</p>
+          <p class="explorer-group">portfolio</p>
+          <ul class="explorer-list">
+            <li><a class="explorer-link" data-cmd="cat about.md" href="index.html">about.md</a></li>
+            <li><a class="explorer-link" data-cmd="cat experience.md" href="experience.html">experience.md</a></li>
+            <li><a class="explorer-link" data-cmd="cat projects.md" href="projects.html">projects.md</a></li>
+            <li><a class="explorer-link" data-cmd="cat contact.sh" href="contact.html">contact.sh</a></li>
+          </ul>
+        </aside>
+
+        <main class="editor">
+          <div class="editor-tabs">
+            <div class="editor-tab">projects.md</div>
+          </div>
+
+          <div class="editor-content reveal">
+            <div class="section-head">
+              <p class="eyebrow">Projects</p>
+              <h2>Built with ownership, velocity, and impact</h2>
+            </div>
+
+            <div class="projects-list">
+              <!-- Project 1: Restaurants to Pantries -->
+              <article class="project-item">
+                <button class="project-header" data-project="r2p">
+                  <span class="project-title">Restaurants to Pantries (R2P) <span class="winner-badge">🏆 1st Place</span></span>
+                  <span class="project-toggle">▼</span>
+                </button>
+                <div class="project-content" id="r2p">
+                  <div class="project-intro">
+                    <p><strong>A full-stack platform connecting restaurants with surplus food to pantries that need it.</strong> Addresses food waste (80 billion lbs/year in US) and food insecurity (34M+ Americans) by eliminating coordination friction.</p>
+                    <p>Created by Cole Namm, Aidan O'Donnell, and Shahid Khan for the SUNY New Paltz Spring 2026 Hackathon.</p>
+                    <p><a href="https://restaurants-to-shelters-hackathon-spring-xiam.onrender.com/" target="_blank" rel="noreferrer">https://restaurants-to-shelters-hackathon-spring-xiam.onrender.com/</a></p>
+                  </div>
+
+                  <h4>The Core Problem</h4>
+                  <p>Restaurants discard food daily while pantries struggle to source donations. No efficient way exists to match supply with demand, coordinate pickups, or optimize collection routes. This creates a massive coordination gap that prevents food from reaching people in need.</p>
+
+                  <h4>Product Solution</h4>
+                  <p><strong>Real-time marketplace + auto-routing.</strong> Restaurants post donations in seconds (type, quantity, pickup window). Pantries find nearby food on an interactive map, claim listings, and instantly generate optimized pickup routes across multiple stops. Recurring listings automate daily donations. Socket.IO ensures everyone sees real-time availability without refreshing.</p>
+
+                  <h4>Key User Outcomes</h4>
+                  <div class="features-section">
+                    <div class="feature-group">
+                      <h5>Restaurants Save Time</h5>
+                      <p>Post food donations in seconds, not hours. One-click recurring donations for daily surplus. Real-time confirmation when pickups complete.</p>
+                    </div>
+                    <div class="feature-group">
+                      <h5>Pantries Get Efficient</h5>
+                      <p>Browse food on map, not spreadsheets. Claim donations instantly. System generates optimal routes—save 2+ hours per collection day. One-tap directions to multiple stops.</p>
+                    </div>
+                    <div class="feature-group">
+                      <h5>Impact</h5>
+                      <p>Frictionless platform eliminates the coordination barrier. More food reaches communities in need faster. Less waste, more impact.</p>
+                    </div>
+                  </div>
+
+                  <h4>Technical Achievement</h4>
+                  <p>Built a full-stack JavaScript app in 24 hours. Integrated Google Routes API for real-time route optimization, OpenCage for address geocoding, and Socket.IO for instant synchronization across all users. Secured with role-based JWT auth (restaurants can't claim, pantries can't post). Containerized with Docker for seamless team collaboration.</p>
+
+                  <h4>Key Challenge: Scaling Real-Time Coordination</h4>
+                  <p>Race conditions when multiple pantries claimed the same listing simultaneously. Solved with optimistic UI + server-side validation. Also tackled timezone complexities—pickup times needed to display correctly across all user timezones using ISO offset formatting.</p>
+                </div>
+              </article>
+
+              <!-- Project 2: Chess21 -->
+              <article class="project-item">
+                <button class="project-header" data-project="chess21">
+                  <span class="project-title">Chess21</span>
+                  <span class="project-toggle">▼</span>
+                </button>
+                <div class="project-content" id="chess21">
+                  <div class="project-intro">
+                    <p><strong>A multiplayer game that blends chess with blackjack—captures trigger real-time duels that determine piece outcome.</strong> Solves the "solved game" problem: pure strategy becomes dynamic and unpredictable.</p>
+                    <p><a href="https://chess21.onrender.com" target="_blank" rel="noreferrer">https://chess21.onrender.com</a></p>
+                  </div>
+
+                  <div class="project-image">
+                    <img src="assets/images/Chess21Image.jpg" alt="Chess21 gameplay screenshot" />
+                  </div>
+
+                  <h4>Unique Product Hook</h4>
+                  <p>Chess is a game of perfect information where experienced players always know the right move. Chess21 adds an element of chance: every capture triggers a blackjack duel. This shifts the dynamic from pure strategy to strategy + calculated risk. Makes chess engaging for casual players while keeping depth for experts.</p>
+
+                  <h4>Core Gameplay</h4>
+                  <ul>
+                    <li><strong>Play Modes:</strong> Matchmake with strangers, send friend invites, or challenge a bot</li>
+                    <li><strong>Chess Phase:</strong> Standard rules, 10-minute timers per player</li>
+                    <li><strong>Capture Trigger:</strong> Attempt a capture → automatic blackjack duel initiates</li>
+                    <li><strong>The Duel:</strong> Attacker is "hitter" (gets 2 cards + hits/stands), defender is "dealer" (shows 1 card + draws to 17+). Higher hand wins. Attacker edge if dealer busts.</li>
+                    <li><strong>Outcomes:</strong> Capture succeeds, fails, or "pushes" (tie—board reverts). Changes everything strategically.</li>
+                  </ul>
+
+                  <h4>Product Architecture</h4>
+                  <p><strong>Real-time multiplayer engine:</strong> React frontend, Node.js/Express backend, Socket.IO for instant game sync. Firebase handles Google OAuth (zero backend auth) + real-time invite system. In-memory game state server ensures sub-100ms move latency. Chess.js validates all moves; custom blackjack service handles deck/card logic.</p>
+
+                  <h4>Key Product Features</h4>
+                  <ul>
+                    <li><strong>Matchmaking:</strong> Auto-pair waiting players or accept friend invites—seamless onboarding</li>
+                    <li><strong>Real-time Synchronization:</strong> Both players see every move, duel outcome, and timer update instantly</li>
+                    <li><strong>Bot Mode:</strong> Practice against AI when friends aren't available</li>
+                    <li><strong>Persistent Invites:</strong> Send friend invites through Firebase—real-time notifications when they accept</li>
+                    <li><strong>Timer-based Stakes:</strong> 10-minute countdown adds urgency; timeout = loss</li>
+                  </ul>
+
+                  <h4>Why It Matters</h4>
+                  <p>Creates a novel gaming experience where strategy meets probability. Appeals to chess enthusiasts seeking fresh gameplay and casual players who want strategy without memorizing openings. Built a complete multiplayer infrastructure (auth, real-time sync, state management) from scratch in 24 hours.</p>
+                </div>
+              </article>
+
+              <!-- Project 3: LockedIn -->
+              <article class="project-item">
+                <button class="project-header" data-project="lockedin">
+                  <span class="project-title">LockedIn - AI Study Companion (Hackathon Lead)</span>
+                  <span class="project-toggle">▼</span>
+                </button>
+                <div class="project-content" id="lockedin">
+                  <div class="project-intro">
+                    <p><strong>An AI-powered study companion that leverages LLMs to provide personalized tutoring and adaptive learning pathways.</strong> Led the team from ideation to MVP under strict hackathon time constraints.</p>
+                  </div>
+
+                  <h4>Role & Impact</h4>
+                  <ul>
+                    <li>Led the team from ideation to MVP under strict time constraints</li>
+                    <li>Defined vision, roadmap, and feature scope for AI tutoring workflows</li>
+                    <li>Presented architecture and delivered a live demo to judges</li>
+                  </ul>
+
+                  <h4>Tech Stack</h4>
+                  <ul>
+                    <li>React frontend with modern hooks and state management</li>
+                    <li>Node.js and Firebase backend for serverless architecture</li>
+                    <li>LangChainJS for LLM orchestration and prompt chaining</li>
+                    <li>Google Gemini API for intelligent tutoring responses</li>
+                  </ul>
+
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>AI-powered problem solving with step-by-step explanations</li>
+                    <li>Real-time feedback and adaptive difficulty adjustment</li>
+                    <li>Multi-subject support with contextual understanding</li>
+                    <li>Session tracking and progress analytics</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <section class="terminal">
+        <div class="terminal-header">Terminal</div>
+        <div class="terminal-content" id="terminalLog">
+          <p><span class="prompt">guest@portfolio:~$</span> npm run dev</p>
+          <p class="success">Compiled successfully.</p>
+          <p><span class="prompt">guest@portfolio:~$</span> <span class="cursor">_</span></p>
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

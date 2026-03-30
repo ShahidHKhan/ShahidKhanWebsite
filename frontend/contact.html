@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact.sh | Shahid Khan</title>
+    <meta name="description" content="Contact Shahid Khan." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="ide-bg" aria-hidden="true"></div>
+
+    <div class="app-shell">
+      <header class="title-bar">
+        <div class="title-meta">
+          <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="title-text">shahid-portfolio - Visual Studio Code</p>
+        </div>
+        <button class="explorer-toggle" id="explorerToggle" aria-label="Toggle explorer">Explorer</button>
+      </header>
+
+      <div class="workbench">
+        <aside class="explorer" id="explorerPanel" aria-label="File explorer">
+          <p class="explorer-header">Explorer</p>
+          <p class="explorer-group">portfolio</p>
+          <ul class="explorer-list">
+            <li><a class="explorer-link" data-cmd="cat about.md" href="index.html">about.md</a></li>
+            <li><a class="explorer-link" data-cmd="cat experience.md" href="experience.html">experience.md</a></li>
+            <li><a class="explorer-link" data-cmd="cat projects.md" href="projects.html">projects.md</a></li>
+            <li><a class="explorer-link" data-cmd="cat contact.sh" href="contact.html">contact.sh</a></li>
+          </ul>
+        </aside>
+
+        <main class="editor">
+          <div class="editor-tabs">
+            <div class="editor-tab">contact.sh</div>
+          </div>
+
+          <div class="editor-content reveal">
+            <div class="section-head">
+              <p class="eyebrow">Contact</p>
+              <h2>Open to Technical Product Manager and Project Manager roles</h2>
+            </div>
+
+            <div class="contact-wrap">
+              <article class="panel">
+                <p class="lead">If you are hiring for product-minded builders who can align technical teams to business goals, I would love to connect.</p>
+              </article>
+
+              <article class="panel contact-panel">
+                <p><strong>Email:</strong> <a href="mailto:mrshahid2005@gmail.com">mrshahid2005@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/shahid-h-khan" target="_blank" rel="noreferrer">linkedin.com/in/shahid-h-khan</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/ShahidHKhan" target="_blank" rel="noreferrer">github.com/ShahidHKhan</a></p>
+              </article>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <section class="terminal">
+        <div class="terminal-header">Terminal</div>
+        <div class="terminal-content" id="terminalLog">
+          <p><span class="prompt">guest@portfolio:~$</span> npm run dev</p>
+          <p class="success">Compiled successfully.</p>
+          <p><span class="prompt">guest@portfolio:~$</span> <span class="cursor">_</span></p>
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
