@@ -379,6 +379,42 @@ h3 {
   background: #1f2b45;
 }
 
+/* Reorganized Skills with Categories */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.skill-category {
+  border-left: 3px solid var(--accent);
+  padding: 0.8rem 0 0.8rem 1rem;
+}
+
+.skill-category h4 {
+  font-family: "Outfit", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 0.6rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.category-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.56rem;
+}
+
+.category-skills span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  font-size: 1rem;
+  background: #1f2b45;
+}
+
 .contact-panel a {
   color: #7dc2ff;
 }

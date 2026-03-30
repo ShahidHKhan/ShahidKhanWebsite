@@ -18,6 +18,8 @@
       .exp-edu-page .panel p { font-size: 1.3rem; margin-bottom: 0.7rem; line-height: 1.7; }
       .exp-edu-page ul li { font-size: 1.25rem; margin-bottom: 0.8rem; line-height: 1.7; }
       .exp-edu-page .skills span { font-size: 1.25rem; padding: 0.6rem 0.95rem; }
+      .exp-edu-page .category-skills span { font-size: 1.25rem; padding: 0.6rem 0.95rem; }
+      .exp-edu-page .skill-category h4 { font-size: 1.15rem; }
       .exp-edu-page .cart-grid, .exp-edu-page .card-grid { gap: 1.5rem; }
       .exp-edu-page .panel { padding: 2rem; }
     </style>
@@ -84,10 +86,37 @@
 
                 <article class="panel">
                   <h3>Technical Skills</h3>
-                  <div class="skills">
-                    <span>JavaScript</span><span>HTML/CSS</span><span>SQL</span><span>Java</span>
-                    <span>React</span><span>Node.js</span><span>Express</span><span>Socket.IO</span>
-                    <span>PostgreSQL</span><span>Firebase</span><span>JWT</span><span>Docker</span>
+                  <div class="skills-container">
+                    <div class="skill-category">
+                      <h4>Languages</h4>
+                      <div class="category-skills">
+                        <span>JavaScript</span><span>HTML/CSS</span><span>SQL</span><span>Java</span>
+                      </div>
+                    </div>
+                    <div class="skill-category">
+                      <h4>Frontend Frameworks & Libraries</h4>
+                      <div class="category-skills">
+                        <span>React</span><span>Vite</span><span>React Router</span><span>CSS Modules</span><span>Leaflet.js</span>
+                      </div>
+                    </div>
+                    <div class="skill-category">
+                      <h4>Backend & Real-Time</h4>
+                      <div class="category-skills">
+                        <span>Node.js</span><span>Express.js</span><span>Socket.IO</span><span>REST API Development</span>
+                      </div>
+                    </div>
+                    <div class="skill-category">
+                      <h4>Databases & Security</h4>
+                      <div class="category-skills">
+                        <span>PostgreSQL</span><span>Firebase (Firestore, Auth)</span><span>JWT</span><span>bcrypt</span><span>OAuth</span>
+                      </div>
+                    </div>
+                    <div class="skill-category">
+                      <h4>Tools & Cloud Integrations</h4>
+                      <div class="category-skills">
+                        <span>Docker</span><span>Docker Compose</span><span>Git</span><span>Google Routes API</span>
+                      </div>
+                    </div>
                   </div>
                 </article>
               </div>
